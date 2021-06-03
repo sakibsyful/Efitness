@@ -1,0 +1,16 @@
+.header{
+    background-color:cyan ;
+}
+
+.social i{
+    font-size:medium;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  a:active {
+    background-color: yellow;
+  }

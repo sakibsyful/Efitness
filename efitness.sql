@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2021 at 07:29 AM
+-- Generation Time: Jun 04, 2021 at 07:30 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.32
 
@@ -42,12 +42,9 @@ CREATE TABLE `addproducts` (
 --
 
 INSERT INTO `addproducts` (`id`, `name`, `type`, `price`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'sakib', 'Fat Burner', 2000, '31916.jpg', '2021-04-07', '2021-04-07'),
-(2, 'sakib', 'Fat Burner', 3000, '82796.jpg', '2021-04-07', '2021-04-07'),
-(3, 'Vitamin39', 'Multivitamin', 40000, '46233.jpg', '2021-04-07', '2021-04-07'),
-(4, 'Vitamin3', 'Multivitamin', 5000, '27500.jpg', '2021-04-26', '2021-04-26'),
-(5, 'nisa', 'Protein shake', 9000, '30550.jpg', '2021-05-02', '2021-05-02'),
-(6, 'aa', 'Protein shake', 10000, '68231.jpg', '2021-05-11', '2021-05-11');
+(15, 'Vitamin39', 'Fat Burner', 3000, '92331.png', '2021-06-02', '2021-06-02'),
+(16, 'Vitamin3', 'Multivitamin', 5000, '91984.jpg', '2021-06-03', '2021-06-03'),
+(17, 'Vitamin39', 'Protein shake', 8000, '21529.jpg', '2021-06-03', '2021-06-03');
 
 -- --------------------------------------------------------
 
@@ -67,7 +64,8 @@ CREATE TABLE `migrations` (
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1);
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2021_06_03_095347_create_roles_table', 2);
 
 -- --------------------------------------------------------
 
@@ -110,8 +108,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Sakib', 'sakibsyful00@gmail.com', NULL, '$2y$10$O3/xfxYW5pEv7UpbVmKdjeBEVYsquDi1aIFivCBlDEyQlLZZ8UgE.', 's4AZH0ZrIwGJWm198V9kGiPphi20MPerQnOAL5QFXdAhtg1rMWE8q0efnJKl', '2021-03-30 02:34:41', '2021-03-30 02:34:41'),
-(2, 'Xunnun', 'xunnun@gmail.com', NULL, '$2y$10$g//tzn05f4.OGDRBZKPEm.mADw.DzjXCfHKpEuK1khK8NSSYPcCMq', NULL, '2021-03-30 03:57:53', '2021-03-30 03:57:53');
+(1, 'Sakib', 'sakibsyful00@gmail.com', NULL, '$2y$10$O3/xfxYW5pEv7UpbVmKdjeBEVYsquDi1aIFivCBlDEyQlLZZ8UgE.', 'BwTro9OTcKbPa9enfFPmQARB6eX6fIf22KDTbWpneRE5Y1hqgRaeUwTiTFRR', '2021-03-30 02:34:41', '2021-03-30 02:34:41'),
+(4, 'Sakib Syful', 'syfulislamsakib@gmail.com', NULL, '$2y$10$o7okwNRn0RRXa.IcqhE6N.F9dbPkPp1DAj4s45NrM6Bjk1KfvOIf6', NULL, '2021-06-03 22:48:49', '2021-06-03 22:48:49');
 
 --
 -- Indexes for dumped tables
@@ -150,19 +148,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `addproducts`
 --
 ALTER TABLE `addproducts`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

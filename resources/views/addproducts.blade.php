@@ -30,7 +30,7 @@
             
           </ul>
           <form class="d-flex">
-            <a class="nav -link active" aria-current="page" style="color: white" href="{{URL::to('/Index')}}">Home</a>
+            <a class="nav -link active" aria-current="page" style="color: white" href="{{URL::to('/home')}}">Home</a>
           </form>
         </div>
       </div>
